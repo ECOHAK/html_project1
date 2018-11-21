@@ -1,0 +1,25 @@
+<meta charset="utf8">
+<style>
+/*공지사항목록, FAQ목록 안 보이게*/
+    div {display:none}
+    /* input {display:;} */
+    /* check했을 때, 빨간 라벨 붙게 */
+    input:checked + label {background:red;}
+    /* 공지사항 목록 나타나게끔 */
+    #tab1:checked ~ #content1,
+    #tab2:checked ~ #content2 {
+        display:block;
+        width:120px; height:50px;
+        border:1px solid yellow;
+    }
+
+
+
+</style>
+<input type="radio" name="tab" id="tab1">
+<label for="tab1"><span>공지사항</span></label>
+/
+<input type="radio" name="tab" id="tab2">
+<label for="tab2"><span>FAQ</span></label>
+<div id="content1">공지사항 목록</div>
+<div id="content2">FAQ 목록</div>

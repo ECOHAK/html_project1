@@ -1,0 +1,32 @@
+<meta charset="utf8">
+<!--Ctrl + Alt + L  소스코드 정렬 ; SPAN은 안 되네요-->
+<!--css는 어도비 사의 브라켓 or 깃허브의 아톰 을 보통 써-->
+<!--파이썬에서의 css는 /* */ 이게 주석인데 주석 처리표시는 안 되-->
+<style>
+    #first { background: yellow; }
+    #second { background: gray; }
+    .title, .desc {color:red}
+    [title] { font-size:30px; }
+    [id=first] { font-size:30px; }
+    /* 속성선택자 */
+    textarea[name=user_id] {
+        background:lightgray
+    }
+</style>
+
+<input name="user_id">
+<textarea name="user_id"></textarea>
+
+
+<div id="first">
+    첫번째 DIV
+</div>
+<div id="second">
+    두번째 DIV
+</div>
+<span class="title" title="공간분할태그">
+    SPAN1
+ </span>
+<span class="desc" title="공간분할태그">
+    SPAN2
+ </span>

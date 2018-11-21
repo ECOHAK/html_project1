@@ -1,0 +1,38 @@
+<meta charset="utf8">
+<!--id 선택자를 이용해 배경을 회색으로-->
+<!--div 안의 배경을 흰색으로-->
+<!--죄다 흰색이니 margin여백을 좀 줘서 표시해야겠다-->
+<!--옆으로 나열해 보여줄래 display:inline-block-->
+<!--박스를 좀 둥굴게 border-radius-->
+<style>
+    #content {background:gray;}
+    #content > div {
+        margin:10px;
+        background:white;
+        display:inline-block;
+        border-radius:20px;
+    }
+</style>
+<div id="content">
+    <div>
+        <h1>공지사항</h1>
+        <ul>
+            <li>게시물_01</li>
+            <li>게시물_02</li>
+        </ul>
+    </div>
+    <div>
+        <h1>공지사항</h1>
+        <ul>
+            <li>게시물_01</li>
+            <li>게시물_02</li>
+        </ul>
+    </div>
+    <div>
+        <h1>공지사항</h1>
+        <ul>
+            <li>게시물_01</li>
+            <li>게시물_02</li>
+        </ul>
+    </div>
+</div>
